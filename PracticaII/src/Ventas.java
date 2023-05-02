@@ -337,7 +337,7 @@ public class Ventas {
     }
 
     public static void clientemasCompras(List<Ventas> ventas){
-        // Suponiendo que tienes una lista de objetos Producto llamada "productos"
+       
 
         Optional<Map.Entry<String, Long>> clienteMaximo = ventas.stream()
                 .collect(Collectors.groupingBy(Ventas::getCUSTOMERNAME, Collectors.counting()))
